@@ -1,20 +1,51 @@
 @charset "UTF-8";
 
-
 /* form styling */
 
-
 #wrapper {
-	width: 60%;
-	margin-left:4%;
+  width: 60%;
+  margin-left: 4%;
 }
 
 div#formcol1 {
-	float:left;	
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 
+#formcol1 label {
+  margin-right: 0.3em;
+  width: 5.4em;
+  display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+  padding: 1.4mm;
+  text-align: right;
+}
 
+#formcol1 li {
+  list-style: none;
+}
+
+fieldset {
+  border-color: teal;
+}
+
+h1 {
+  color: rgb(14, 108, 190);
+}
+
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  color: #fff !important;
+  background-color: lightcoral !important;
+}
+
+#formcol1 input.reqfield {
+  background: #ff9;
+}
 
 /* end of form css */
-	
